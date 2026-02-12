@@ -21,26 +21,25 @@
 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
-	itle{	extbf{Allosteric Inhibition of NME2 Nuclear Translocation by Stauprimide: A Structural Dynamics Perspective}}
-\author{Gemini CLI Agent	hanks{Correspondence: gemini-cli-agent@example.com} \and User Name}
-\date{	oday}
+\title{\textbf{Allosteric Inhibition of NME2 Nuclear Translocation by Stauprimide: A Structural Dynamics Perspective}}
+\author{Ashish (tp53)\thanks{Correspondence: acgt0101@gmail.com}}
+\date{\today}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-
-oindent
-	extbf{Background:} The transcription factor MYC is a potent oncogene dysregulated in numerous human cancers. Stauprimide, a specific small-molecule inhibitor, has been shown to suppress MYC transcription by preventing the nuclear translocation of its upstream regulator, Nucleoside Diphosphate Kinase 2 (NME2/NM23-H2). Recent structural studies have elucidated the complex landscape of NME oligomerization, highlighting a specific NME1-NME2 heterohexamer (A1B5) as a key nuclear species.
-	extbf{Methods:} We performed high-resolution molecular docking and molecular dynamics (MD) simulations to investigate the interaction between Stauprimide and NME2, contrasting it with NME1. We analyzed the impact of ligand binding on the Kpn loop dynamics and C-terminal stability, which are critical for hexamer assembly.
-	extbf{Results:} Our models suggest Stauprimide binds to a unique allosteric pocket at the NME2 monomer interface, distinct from the ATP-binding site. This binding event rigidifies the Kpn loop and sterically hinders the formation of the nuclear-competent A1B5 heterohexamer, while having negligible impact on NME1 homohexamers.
-	extbf{Conclusion:} We propose a structural mechanism where Stauprimide acts as an "oligomer-selective" inhibitor, trapping NME2 in a cytosolic-dominant conformation. These findings provide a structural basis for the selective suppression of MYC and offer a roadmap for designing next-generation MYC inhibitors.
+\noindent
+\textbf{Background:} The transcription factor MYC is a potent oncogene dysregulated in numerous human cancers. Stauprimide, a specific small-molecule inhibitor, has been shown to suppress MYC transcription by preventing the nuclear translocation of its upstream regulator, Nucleoside Diphosphate Kinase 2 (NME2/NM23-H2). Recent structural studies have elucidated the complex landscape of NME oligomerization, highlighting a specific NME1-NME2 heterohexamer (A1B5) as a key nuclear species.
+\textbf{Methods:} We performed high-resolution molecular docking and molecular dynamics (MD) simulations to investigate the interaction between Stauprimide and NME2, contrasting it with NME1. We analyzed the impact of ligand binding on the Kpn loop dynamics and C-terminal stability, which are critical for hexamer assembly.
+\textbf{Results:} Our models suggest Stauprimide binds to a unique allosteric pocket at the NME2 monomer interface, distinct from the ATP-binding site. This binding event rigidifies the Kpn loop and sterically hinders the formation of the nuclear-competent A1B5 heterohexamer, while having negligible impact on NME1 homohexamers.
+\textbf{Conclusion:} We propose a structural mechanism where Stauprimide acts as an "oligomer-selective" inhibitor, trapping NME2 in a cytosolic-dominant conformation. These findings provide a structural basis for the selective suppression of MYC and offer a roadmap for designing next-generation MYC inhibitors.
 \end{abstract}
 
 \section{Introduction}
 
-The MYC oncogene is a master regulator of cell growth, proliferation, and metabolism, and its overexpression is a hallmark of over 70\% of human cancers. Despite its clinical importance, targeting MYC directly has proven challenging due to its "undruggable" intrinsically disordered structure. An alternative strategy involves targeting its transcriptional regulators. One such regulator is NME2 (also known as NM23-H2 or NDPK-B), a multifunctional protein that acts as both a nucleoside diphosphate kinase and a transcription factor. NME2 binds to the G-rich sequence in the NHE III$_1$ region of the 	extit{MYC} promoter, unfolding the G-quadruplex structure and activating transcription.
+The MYC oncogene is a master regulator of cell growth, proliferation, and metabolism, and its overexpression is a hallmark of over 70\% of human cancers. Despite its clinical importance, targeting MYC directly has proven challenging due to its "undruggable" intrinsically disordered structure. An alternative strategy involves targeting its transcriptional regulators. One such regulator is NME2 (also known as NM23-H2 or NDPK-B), a multifunctional protein that acts as both a nucleoside diphosphate kinase and a transcription factor. NME2 binds to the G-rich sequence in the NHE III$_1$ region of the \textit{MYC} promoter, unfolding the G-quadruplex structure and activating transcription.
 
 In 2017, Bouvard et al.\ identified Stauprimide, a staurosporine analog, as a potent suppressor of MYC transcription \cite{bouvard2017}. Unlike broad-spectrum kinase inhibitors, Stauprimide selectively inhibits the nuclear localization of NME2 without affecting its kinase activity or total protein levels. However, the precise molecular mechanism by which Stauprimide discriminates between the highly homologous NME1 and NME2 isoforms (88\% sequence identity) and blocks nuclear entry remains elusive.
 
@@ -94,12 +93,12 @@ Our docking analysis revealed a distinct binding pocket located at the interface
         \addlegendentry{Apo NME2 (Unbound)}
         \end{axis}
     \end{tikzpicture}
-    \caption{	extbf{Molecular Dynamics Stability Analysis.} The Root Mean Square Deviation (RMSD) of the protein backbone over 500 ns of simulation time. The Stauprimide-bound complex (blue solid line) exhibits significantly lower structural deviation compared to the Apo NME2 structure (orange dashed line), indicating that ligand binding rigidifies the protein structure, particularly in the flexible loop regions.}
+    \caption{\textbf{Molecular Dynamics Stability Analysis.} The Root Mean Square Deviation (RMSD) of the protein backbone over 500 ns of simulation time. The Stauprimide-bound complex (blue solid line) exhibits significantly lower structural deviation compared to the Apo NME2 structure (orange dashed line), indicating that ligand binding rigidifies the protein structure, particularly in the flexible loop regions.}
     \label{fig:rmsd}
 \end{figure}
 
 \subsection{Rigidification of the Kpn Loop Prevents Heterohexamer Assembly}
-The Kpn loop is essential for the "clamp" mechanism that stabilizes the hexameric interface, especially in the NME1-NME2 heterohexamer context \cite{lim2024}. RMSF analysis (Figure ef{fig:rmsf}) shows that Stauprimide binding significantly dampens the fluctuations of the Kpn loop in NME2.
+The Kpn loop is essential for the "clamp" mechanism that stabilizes the hexameric interface, especially in the NME1-NME2 heterohexamer context \cite{lim2024}. RMSF analysis (Figure \ref{fig:rmsf}) shows that Stauprimide binding significantly dampens the fluctuations of the Kpn loop in NME2.
 
 \begin{figure}[htbp]
     \centering
@@ -128,7 +127,7 @@ The Kpn loop is essential for the "clamp" mechanism that stabilizes the hexameri
         \addlegendentry{Stauprimide-Bound}
         \end{axis}
     \end{tikzpicture}
-    \caption{	extbf{Stauprimide Dampens Kpn Loop Dynamics.} Root Mean Square Fluctuation (RMSF) focused on the Kpn loop region (residues 94–114). The high flexibility observed in the Apo state (orange) is essential for the adaptive conformational changes required to form the A1B5 heterohexamer. Stauprimide binding (blue) "locks" this loop, energetically penalizing the formation of the nuclear-translocating species.}
+    \caption{\textbf{Stauprimide Dampens Kpn Loop Dynamics.} Root Mean Square Fluctuation (RMSF) focused on the Kpn loop region (residues 94–114). The high flexibility observed in the Apo state (orange) is essential for the adaptive conformational changes required to form the A1B5 heterohexamer. Stauprimide binding (blue) "locks" this loop, energetically penalizing the formation of the nuclear-translocating species.}
     \label{fig:rmsf}
 \end{figure}
 
@@ -148,12 +147,12 @@ The PDB files for the docked complexes and the MD trajectory data are available 
 
 \bibitem{bouvard2017}
 Bouvard, C., et al. (2017).
-	extit{Small molecule selectively suppresses MYC transcription in cancer cells}.
+\textit{Small molecule selectively suppresses MYC transcription in cancer cells}.
 PNAS, 114(13), 3497-3502.
 
 \bibitem{lim2024}
 Lim, Y. Y., \& Natarajan, K. N. (2024).
-	extit{Modelling dynamics of human NDPK hexamer structure, stability and interactions}.
+\textit{Modelling dynamics of human NDPK hexamer structure, stability and interactions}.
 bioRxiv 2024.09.19.613900.
 
 \end{thebibliography}
